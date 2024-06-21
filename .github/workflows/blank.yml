@@ -29,8 +29,6 @@ model_name = "ernie-3.0-base-zh"
 num_classes = len(unique_labels)
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_classes=num_classes)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-
 import numpy as np
 
 def count_seq_lengths(dataset):
